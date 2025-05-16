@@ -62,7 +62,9 @@
   }
 
   const eliminarPaciente = (id) => {
+    if(confirm('¿Deseas eliminar a este paciente?')) {
     pacientes.value = pacientes.value.filter( paciente => paciente.id !== id)
+    }
   }
 
 </script>
